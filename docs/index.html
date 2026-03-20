@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Comanda Flex PDV | PDV web para restaurantes</title>
+    <meta
+      name="description"
+      content="Landing page do Comanda Flex PDV para GitHub Pages: um sistema PDV web para restaurantes com Admin, Garcom, Cozinha e Caixa."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="./assets/site.css" />
+    <script defer src="./assets/site.js"></script>
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#topo" aria-label="Comanda Flex PDV">
+        <img class="brand-logo" src="./assets/brand-logo.png" alt="" />
+        <span class="brand-copy">
+          <strong>Comanda Flex PDV</strong>
+          <small>PDV web para restaurantes</small>
+        </span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        Menu
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Navegacao principal">
+        <a href="#destaques">Destaques</a>
+        <a href="#modulos">Modulos</a>
+        <a href="#tecnologia">Tecnologia</a>
+        <a href="#publicar">GitHub Pages</a>
+        <a
+          class="button button-small button-primary"
+          href="https://instagram.com/comandaflexpdv"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Instagram
+        </a>
+      </nav>
+    </header>
+
+    <main id="topo">
+      <section class="hero section-shell">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Pedido, cozinha, caixa e gestao na mesma esteira</p>
+          <h1>Um PDV pensado para vender bem e operar sem improviso.</h1>
+          <p class="hero-lede">
+            O Comanda Flex PDV transforma a rotina do restaurante em um fluxo
+            unico: o garcom registra, a cozinha acompanha SLA, o caixa fecha com
+            rastreabilidade e a administracao enxerga indicadores reais de
+            desempenho.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#modulos">Explorar modulos</a>
+            <a class="button button-secondary" href="#publicar">Publicar no GitHub Pages</a>
+          </div>
+
+          <ul class="hero-metrics" aria-label="Indicadores do produto">
+            <li>
+              <strong data-counter="4">4</strong>
+              <span>frentes integradas: Admin, Garcom, Cozinha e Caixa</span>
+            </li>
+            <li>
+              <strong data-counter="30">30</strong>
+              <span>rotinas operacionais entre venda, auditoria e suporte</span>
+            </li>
+            <li>
+              <strong data-counter="1">1</strong>
+              <span>dashboard configuravel para metas, alertas e leitura do negocio</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-stage" data-reveal>
+          <article class="signal-board">
+            <div class="signal-board__header">
+              <span>Dashboard gerencial</span>
+              <span class="status-pill">em operacao</span>
+            </div>
+
+            <div class="signal-kpis">
+              <div class="metric-card">
+                <small>Faturamento bruto</small>
+                <strong>R$ 18.420</strong>
+                <span>Periodo customizavel</span>
+              </div>
+              <div class="metric-card">
+                <small>Ticket medio</small>
+                <strong>R$ 42,10</strong>
+                <span>Comparativo com periodo anterior</span>
+              </div>
+              <div class="metric-card">
+                <small>Cancelamentos</small>
+                <strong>2,4%</strong>
+                <span>Alerta automatico por limite</span>
+              </div>
+            </div>
+
+            <div class="heatmap-card">
+              <div class="heatmap-copy">
+                <strong>Heatmap por dia e hora</strong>
+                <p>Visual rapido para identificar picos, ociosidade e gargalos.</p>
+              </div>
+              <div class="heatmap-grid" aria-hidden="true">
+                <span style="--heat: 0.15"></span>
+                <span style="--heat: 0.28"></span>
+                <span style="--heat: 0.44"></span>
+                <span style="--heat: 0.22"></span>
+                <span style="--heat: 0.18"></span>
+                <span style="--heat: 0.56"></span>
+                <span style="--heat: 0.8"></span>
+                <span style="--heat: 0.92"></span>
+                <span style="--heat: 0.72"></span>
+                <span style="--heat: 0.5"></span>
+                <span style="--heat: 0.62"></span>
+                <span style="--heat: 0.36"></span>
+                <span style="--heat: 0.24"></span>
+                <span style="--heat: 0.58"></span>
+                <span style="--heat: 0.7"></span>
+                <span style="--heat: 0.88"></span>
+                <span style="--heat: 0.94"></span>
+                <span style="--heat: 0.66"></span>
+              </div>
+            </div>
+          </article>
+
+          <div class="signal-flow" aria-label="Fluxo operacional">
+            <article class="flow-card">
+              <small>Garcom</small>
+              <strong>Fila local + sincronizacao</strong>
+              <p>Pedido nao se perde quando a conexao oscila.</p>
+            </article>
+            <article class="flow-card">
+              <small>Cozinha</small>
+              <strong>SLA por status</strong>
+              <p>Temporizador, alerta sonoro e historico no mesmo painel.</p>
+            </article>
+            <article class="flow-card">
+              <small>Caixa</small>
+              <strong>Fechamento com trilha</strong>
+              <p>Turno, diferenca, troco sugerido e relatorio PDF.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-bar section-shell" data-reveal>
+        <article class="proof-item">
+          <span>Operacao ponta a ponta</span>
+          <p>Do pedido ao recibo, cada etapa tem contexto, regra e auditoria.</p>
+        </article>
+        <article class="proof-item">
+          <span>Confianca em campo</span>
+          <p>Impressao por setor, QR de acesso local e bootstrap automatico do ambiente.</p>
+        </article>
+        <article class="proof-item">
+          <span>Gestao acionavel</span>
+          <p>KPIs, metas, alertas, top itens e mix de pagamento para ler o negocio.</p>
+        </article>
+      </section>
+
+      <section id="destaques" class="section-shell">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Por que essa pagina existe</p>
+          <h2>O projeto merece ser apresentado como produto.</h2>
+          <p>
+            O Comanda Flex PDV nao e so um CRUD de pedidos. Ele entrega
+            operacao, governanca, continuidade e visibilidade comercial em uma
+            estrutura unica.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card" data-reveal>
+            <span class="feature-tag">Fluxo</span>
+            <h3>Pedido sai do salao e chega na producao com menos ruído</h3>
+            <p>
+              Categoria, busca, extras, notas rapidas, delivery, promocao
+              automatica e validacao de impressora antes da gravacao.
+            </p>
+          </article>
+
+          <article class="feature-card" data-reveal>
+            <span class="feature-tag">Confiabilidade</span>
+            <h3>Operacao continua mesmo quando a rede falha</h3>
+            <p>
+              O modulo do garcom monitora conectividade, guarda pedidos em fila
+              local e sincroniza quando o servidor volta.
+            </p>
+          </article>
+
+          <article class="feature-card" data-reveal>
+            <span class="feature-tag">Cozinha</span>
+            <h3>SLA visivel, historico auditavel e alerta sonoro de novo pedido</h3>
+            <p>
+              A cozinha trabalha com status configuraveis, timers por etapa e
+              transicoes registradas por usuario e motivo.
+            </p>
+          </article>
+
+          <article class="feature-card" data-reveal>
+            <span class="feature-tag">Financeiro</span>
+            <h3>Caixa com abertura, reforco, sangria, divergencia e relatorio</h3>
+            <p>
+              O recebimento aceita pagamentos parciais, respeita troco por
+              metodo e emite comprovante com reimpressao rastreada.
+            </p>
+          </article>
+
+          <article class="feature-card" data-reveal>
+            <span class="feature-tag">Gestao</span>
+            <h3>Dashboard que liga faturamento a comportamento operacional</h3>
+            <p>
+              KPIs, heatmap, top itens, mix de pagamentos, metas, comparativos e
+              alertas ajudam o admin a enxergar mais que a venda bruta.
+            </p>
+          </article>
+
+          <article class="feature-card" data-reveal>
+            <span class="feature-tag">Continuidade</span>
+            <h3>Backup, importacao, reset seguro e logs segmentados por dominio</h3>
+            <p>
+              O sistema foi estruturado para recuperar ambiente, preservar
+              historico e sustentar auditoria tecnica e operacional.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="modulos" class="section-shell modules-shell">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Visao por modulo</p>
+          <h2>Quatro papeis, uma unica linguagem operacional.</h2>
+          <p>
+            A narrativa comercial fica mais forte quando cada frente do
+            restaurante enxerga seu ganho direto no sistema.
+          </p>
+        </div>
+
+        <div class="module-tabs" role="tablist" aria-label="Modulos do sistema" data-reveal>
+          <button
+            class="module-tab is-active"
+            type="button"
+            id="tab-admin"
+            role="tab"
+            aria-selected="true"
+            aria-controls="panel-admin"
+            data-module="admin"
+          >
+            Admin
+          </button>
+          <button
+            class="module-tab"
+            type="button"
+            id="tab-waiter"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-waiter"
+            data-module="waiter"
+          >
+            Garcom
+          </button>
+          <button
+            class="module-tab"
+            type="button"
+            id="tab-kitchen"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-kitchen"
+            data-module="kitchen"
+          >
+            Cozinha
+          </button>
+          <button
+            class="module-tab"
+            type="button"
+            id="tab-cashier"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-cashier"
+            data-module="cashier"
+          >
+            Caixa
+          </button>
+        </div>
+
+        <div class="module-panels">
+          <article
+            class="module-panel is-active"
+            id="panel-admin"
+            role="tabpanel"
+            aria-labelledby="tab-admin"
+            data-module-panel="admin"
+            data-reveal
+          >
+            <div class="module-copy">
+              <span class="module-kicker">Admin</span>
+              <h3>Governanca, configuracao e leitura do negocio no mesmo painel</h3>
+              <p>
+                O modulo administrativo centraliza dashboard configuravel,
+                catalogo, promocoes, metodos de pagamento, impressoras, recibo,
+                usuarios, logs e rotinas de backup.
+              </p>
+              <ul class="module-list">
+                <li>Heatmap, KPIs, metas, alertas e preferencia por usuario.</li>
+                <li>Itens, categorias, extras, promocao e taxa de entrega.</li>
+                <li>Backup JSON, importacao e reset com copia de seguranca previa.</li>
+              </ul>
+            </div>
+
+            <div class="module-mock module-mock--admin" aria-hidden="true">
+              <div class="mock-pill">metas</div>
+              <div class="mock-pill">alertas</div>
+              <div class="mock-bar" style="--fill: 84%"></div>
+              <div class="mock-bar" style="--fill: 61%"></div>
+              <div class="mock-grid">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="module-panel"
+            id="panel-waiter"
+            role="tabpanel"
+            aria-labelledby="tab-waiter"
+            data-module-panel="waiter"
+            data-reveal
+            hidden
+          >
+            <div class="module-copy">
+              <span class="module-kicker">Garcom</span>
+              <h3>Pedido rapido, delivery estruturado e protecao contra queda de conexao</h3>
+              <p>
+                O garcom trabalha com categorias, busca, extras, observacoes,
+                notas rapidas, historico, reimpressao e fluxo completo para
+                cliente e endereco no delivery.
+              </p>
+              <ul class="module-list">
+                <li>Promocoes entram automaticamente no momento do pedido.</li>
+                <li>Modo offline com fila local e sincronizacao posterior.</li>
+                <li>Validacao de impressora evita pedido sem comprovante operacional.</li>
+              </ul>
+            </div>
+
+            <div class="module-mock module-mock--waiter" aria-hidden="true">
+              <div class="order-chip">burger + cheddar</div>
+              <div class="order-chip">combo promo</div>
+              <div class="order-chip">delivery</div>
+              <div class="order-note">sem cebola | extra molho</div>
+              <div class="sync-strip">
+                <span class="sync-dot"></span>
+                <strong>fila local pronta para sincronizar</strong>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="module-panel"
+            id="panel-kitchen"
+            role="tabpanel"
+            aria-labelledby="tab-kitchen"
+            data-module-panel="kitchen"
+            data-reveal
+            hidden
+          >
+            <div class="module-copy">
+              <span class="module-kicker">Cozinha</span>
+              <h3>Fila visual, timers por status e rastreabilidade de cada mudanca</h3>
+              <p>
+                A cozinha mostra a carga operacional em cards, permite filtrar
+                estados, reordenar status, cancelar com motivo e registrar cada
+                transicao no historico do pedido.
+              </p>
+              <ul class="module-list">
+                <li>SLA configuravel por status, com leitura rapida de atraso.</li>
+                <li>Alerta sonoro para novos pedidos e foco em fullscreen.</li>
+                <li>Historico expandido para auditoria de execucao.</li>
+              </ul>
+            </div>
+
+            <div class="module-mock module-mock--kitchen" aria-hidden="true">
+              <div class="kitchen-card">
+                <small>pending</small>
+                <strong>02:11</strong>
+              </div>
+              <div class="kitchen-card">
+                <small>preparing</small>
+                <strong>08:42</strong>
+              </div>
+              <div class="kitchen-card is-hot">
+                <small>awaiting_payment</small>
+                <strong>13:09</strong>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="module-panel"
+            id="panel-cashier"
+            role="tabpanel"
+            aria-labelledby="tab-cashier"
+            data-module-panel="cashier"
+            data-reveal
+            hidden
+          >
+            <div class="module-copy">
+              <span class="module-kicker">Caixa</span>
+              <h3>Fechamento serio para uma rotina que normalmente vive no improviso</h3>
+              <p>
+                O caixa recebe pagamentos parciais, calcula troco conforme
+                metodo, controla turno, registra entradas e retiradas e gera
+                relatorios PDF com divergencia de fechamento.
+              </p>
+              <ul class="module-list">
+                <li>Abertura, reforco, sangria e fechamento na mesma trilha.</li>
+                <li>Recibos recentes, reimpressao e comprovante agrupado por pedido.</li>
+                <li>Sugestao de troco para acelerar atendimento no terminal.</li>
+              </ul>
+            </div>
+
+            <div class="module-mock module-mock--cashier" aria-hidden="true">
+              <div class="cash-line">
+                <span>Dinheiro</span>
+                <strong>R$ 120,00</strong>
+              </div>
+              <div class="cash-line">
+                <span>Cartao</span>
+                <strong>R$ 90,00</strong>
+              </div>
+              <div class="cash-total">
+                <span>valor esperado</span>
+                <strong>R$ 210,00</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell timeline-shell">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Fluxo de valor</p>
+          <h2>Uma venda percorre o sistema de forma clara.</h2>
+          <p>
+            Essa leitura ajuda tanto em proposta comercial quanto em portfolio:
+            fica evidente onde o produto reduz erro, tempo e retrabalho.
+          </p>
+        </div>
+
+        <div class="timeline" data-reveal>
+          <article class="timeline-step">
+            <span>01</span>
+            <h3>Captura precisa</h3>
+            <p>Garcom monta o pedido com extras, notas e tipo de atendimento.</p>
+          </article>
+          <article class="timeline-step">
+            <span>02</span>
+            <h3>Execucao visivel</h3>
+            <p>Cozinha acompanha fila, SLA, prioridade e historico de status.</p>
+          </article>
+          <article class="timeline-step">
+            <span>03</span>
+            <h3>Recebimento controlado</h3>
+            <p>Caixa registra pagamentos, troco, turno e comprovantes.</p>
+          </article>
+          <article class="timeline-step">
+            <span>04</span>
+            <h3>Decisao gerencial</h3>
+            <p>Admin transforma a operacao em KPI, meta, alerta e acao.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="tecnologia" class="section-shell">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Base tecnica</p>
+          <h2>Produto funcional com stack objetiva e implantacao simples.</h2>
+          <p>
+            A pagina tambem comunica maturidade tecnica: o projeto ja nasceu com
+            bootstrap, instalador, PDF, QR local e separacao clara de modulos.
+          </p>
+        </div>
+
+        <div class="stack-grid">
+          <article class="stack-card" data-reveal>
+            <h3>Flask + Jinja + JavaScript</h3>
+            <p>
+              Estrutura web direta, leve e facil de manter para uma operacao que
+              precisa rodar sem um front-end pesado.
+            </p>
+          </article>
+
+          <article class="stack-card" data-reveal>
+            <h3>SQLite com bootstrap automatico</h3>
+            <p>
+              Ao iniciar, o sistema cria base, schema, seed e recupera admin
+              generico quando necessario.
+            </p>
+          </article>
+
+          <article class="stack-card" data-reveal>
+            <h3>Waitress, QR local e acesso rapido</h3>
+            <p>
+              O servidor pode subir com QR de acesso pela rede local para
+              acelerar uso em terminais moveis.
+            </p>
+          </article>
+
+          <article class="stack-card" data-reveal>
+            <h3>PDF, impressao e identidade visual</h3>
+            <p>
+              ReportLab, Pillow e configuracao de recibo permitem padronizar
+              documentos, vias e ativos do estabelecimento.
+            </p>
+          </article>
+
+          <article class="stack-card" data-reveal>
+            <h3>i18n, fuso e configuracao por operacao</h3>
+            <p>
+              O sistema contempla linguagem, timezone, performance preset e
+              preferencias voltadas ao contexto real do restaurante.
+            </p>
+          </article>
+
+          <article class="stack-card" data-reveal>
+            <h3>Empacotamento Windows pronto</h3>
+            <p>
+              A pipeline ja considera PyInstaller, Inno Setup e metadados
+              centralizados para gerar EXE e instalador.
+            </p>
+          </article>
+        </div>
+
+        <div class="deployment-callout" data-reveal>
+          <div>
+            <p class="eyebrow">Esta landing page</p>
+            <h3>Separada do Flask para publicar rapido no GitHub Pages</h3>
+            <p>
+              O material promocional fica em uma camada estatica. Isso evita
+              build de front-end, simplifica manutencao e deixa a divulgacao
+              independente do app principal.
+            </p>
+          </div>
+
+          <pre class="code-block"><code>docs/
+  index.html
+  assets/site.css
+  assets/site.js
+
+.github/workflows/
+  deploy-pages.yml
+
+scripts/
+  preview-pages.ps1</code></pre>
+        </div>
+      </section>
+
+      <section id="publicar" class="section-shell publish-shell">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Publicacao</p>
+          <h2>A pagina ja esta pronta para ir ao ar.</h2>
+          <p>
+            O fluxo mais simples e subir o repositorio e usar o GitHub Actions
+            para publicar o conteudo de <code>docs/</code> como site oficial.
+          </p>
+        </div>
+
+        <div class="publish-grid">
+          <article class="publish-card" data-reveal>
+            <h3>O que foi preparado</h3>
+            <ul>
+              <li>Landing page com narrativa comercial e modulos interativos.</li>
+              <li>CSS proprio, responsivo e com identidade alinhada ao projeto.</li>
+              <li>JavaScript para tabs, animacao de entrada e contador.</li>
+            </ul>
+          </article>
+
+          <article class="publish-card" data-reveal>
+            <h3>Como colocar no ar</h3>
+            <ol>
+              <li>Envie a branch principal para o GitHub.</li>
+              <li>Em <strong>Settings &gt; Pages</strong>, selecione <strong>GitHub Actions</strong>.</li>
+              <li>O workflow publica automaticamente a pasta <code>docs/</code>.</li>
+            </ol>
+          </article>
+
+          <article class="publish-card publish-card--accent" data-reveal>
+            <h3>Preview local</h3>
+            <p>
+              Para revisar antes do push, rode o script PowerShell e abra o
+              endereco local gerado pelo servidor HTTP.
+            </p>
+            <pre class="code-inline"><code>.\scripts\preview-pages.ps1</code></pre>
+          </article>
+        </div>
+      </section>
+
+      <section class="closing-cta section-shell" data-reveal>
+        <p class="eyebrow">Material pronto para portfolio, proposta ou pre-lancamento</p>
+        <h2>Agora o projeto tem uma vitrine que fala a lingua do negocio.</h2>
+        <p>
+          Em vez de listar arquivos e rotas, a pagina vende o que realmente
+          importa para quem decide: controle, agilidade, previsibilidade e
+          capacidade de crescer sem perder a operacao da mao.
+        </p>
+
+        <div class="hero-actions">
+          <a
+            class="button button-primary"
+            href="https://instagram.com/comandaflexpdv"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Abrir Instagram do projeto
+          </a>
+          <a class="button button-secondary" href="#topo">Voltar ao topo</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        <strong>Comanda Flex PDV</strong>
+        <span>Landing page estatica para GitHub Pages.</span>
+      </p>
+      <p>&copy; <span id="current-year">2026</span> Comanda Flex PDV.</p>
+    </footer>
+  </body>
+</html>
