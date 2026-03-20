@@ -109,9 +109,6 @@ const moduleTabs = Array.from(document.querySelectorAll(".module-tab"));
 const modulePanels = Array.from(document.querySelectorAll("[data-module-panel]"));
 
 if (moduleTabs.length && modulePanels.length) {
-  const panelByModule = new Map(
-    modulePanels.map((panel) => [panel.dataset.modulePanel, panel]),
-  );
   let currentIndex = Math.max(
     0,
     moduleTabs.findIndex((tab) => tab.classList.contains("is-active")),
@@ -147,6 +144,13 @@ if (moduleTabs.length && modulePanels.length) {
       activateModule(tab.dataset.module || "");
     });
   });
+
+  const modulesShell = document.querySelector(".modules-shell");
+  if (modulesShell) {
+    modulesShell.addEventListener("mouseenter", () => {
+      autoRotate = false;
+    });
+  }
 
   const tablist = document.querySelector(".module-tabs");
   if (tablist) {
