@@ -141,6 +141,7 @@ pre {
 .implementation-card h3,
 .closing-cta h2 {
   font-family: var(--font-display);
+  text-wrap: balance;
 }
 
 .brand-copy strong {
@@ -286,6 +287,7 @@ pre {
 .hero-caption {
   color: var(--text-soft);
   line-height: 1.7;
+  text-wrap: pretty;
 }
 
 .hero-lede {
