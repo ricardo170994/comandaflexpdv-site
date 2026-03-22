@@ -4,17 +4,16 @@ param(
     [switch]$OpenBrowser
 )
 
-$projectRoot = Split-Path -Parent $PSScriptRoot
-$docsPath = Join-Path $projectRoot "docs"
+$sitePath = $PSScriptRoot
 $previewUrl = "http://localhost:$Port"
 
-if (-not (Test-Path $docsPath)) {
-    throw "Pasta docs nao encontrada em $docsPath"
+if (-not (Test-Path $sitePath)) {
+    throw "Pasta githubpages nao encontrada em $sitePath"
 }
 
 Write-Host ""
 Write-Host "Preview comercial do Comanda Flex PDV" -ForegroundColor Cyan
-Write-Host "Pasta publicada: $docsPath"
+Write-Host "Pasta publicada: $sitePath"
 Write-Host "URL local: $previewUrl"
 Write-Host ""
 Write-Host "Checklist rapido de revisao:" -ForegroundColor Yellow
@@ -31,13 +30,13 @@ if ($OpenBrowser) {
 
 $pyLauncher = Get-Command py -ErrorAction SilentlyContinue
 if ($pyLauncher) {
-    & py -3 -m http.server $Port -d $docsPath
+    & py -3 -m http.server $Port -d $sitePath
     exit $LASTEXITCODE
 }
 
 $python = Get-Command python -ErrorAction SilentlyContinue
 if ($python) {
-    & python -m http.server $Port -d $docsPath
+    & python -m http.server $Port -d $sitePath
     exit $LASTEXITCODE
 }
 
