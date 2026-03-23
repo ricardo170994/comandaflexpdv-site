@@ -43,6 +43,8 @@
       <nav id="site-nav" class="site-nav" aria-label="Navegação principal">
         <a href="#familias">Famílias</a>
         <a href="#edicoes">Edições</a>
+        <a href="#relatorios">Relatórios</a>
+        <a href="#acessos">Acessos</a>
         <a href="#matriz">Matriz</a>
         <a href="#completa">Completa</a>
         <a href="./index.html">Site principal</a>
@@ -171,28 +173,39 @@
       <section id="edicoes" class="section-shell">
         <div class="section-heading" data-reveal>
           <p class="eyebrow">Edições funcionais</p>
-          <h2>As edições definem quais áreas do restaurante entram no pacote.</h2>
+          <h2>As edições sobem em camadas: cada uma mantém a anterior e acrescenta novas frentes.</h2>
           <p>
-            Aqui a diferença deixa de ser comercial e passa a ser funcional: quem vai
-            trabalhar com o sistema e quais áreas terão acesso.
+            A leitura correta é cumulativa. A edição seguinte não troca a anterior; ela
+            herda o que já existia e adiciona novas capacidades operacionais e administrativas.
           </p>
         </div>
 
-        <div class="docs-tier-grid">
+        <div class="docs-family-grid">
           <article class="docs-card" data-reveal>
             <div class="docs-card__header">
               <h3>Garçom</h3>
               <span class="docs-pill">Enxuta</span>
             </div>
             <p>
-              Edição focada em atendimento e lançamento de pedidos, com administração
-              essencial para manter cardápio, clientes, impressoras e usuários.
+              Esta é a edição mais simples. Ela concentra o salão e a administração
+              essencial para o restaurante operar pedidos com clareza.
             </p>
             <ul class="docs-list">
               <li>Módulos ativos: Administração essencial e Garçom.</li>
               <li>Perfis disponíveis: admin e garçom.</li>
-              <li>Administração liberada: itens, categorias, extras, clientes, taxas, impressoras, usuários e configurações do garçom.</li>
+              <li>Navegação principal para o admin: Admin e Garçom.</li>
+              <li>Áreas administrativas: Itens do Cardápio, Categorias de Itens, Extras, Tarifas de Delivery, Clientes, Configurações do Garçom, Impressoras, Impressão, Usuários e Configurações do Sistema.</li>
+              <li>Relatórios e análise: não inclui Dashboard, Relatórios do Caixa, Relatório de Vendas ou Logs.</li>
             </ul>
+
+            <div class="docs-inline-note">
+              <small>Nesta opção você tem</small>
+              <strong>Atendimento e base administrativa para começar.</strong>
+              <p>
+                É a opção indicada quando a conversa está focada em pedido, cardápio,
+                clientes, impressão e rotina do garçom, sem entrar ainda em cozinha ou caixa.
+              </p>
+            </div>
           </article>
 
           <article class="docs-card" data-reveal>
@@ -201,14 +214,26 @@
               <span class="docs-pill">Operação integrada</span>
             </div>
             <p>
-              Adiciona a frente de cozinha para dar visibilidade da fila de produção e
-              reduzir ruído entre atendimento e preparo.
+              Esta edição mantém tudo o que já existe na opção Garçom e adiciona a
+              frente de produção da cozinha.
             </p>
             <ul class="docs-list">
-              <li>Módulos ativos: Administração essencial, Garçom e Cozinha.</li>
-              <li>Perfis disponíveis: admin, garçom e cozinha.</li>
-              <li>Administração liberada: tudo da edição Garçom, mais configurações da cozinha.</li>
+              <li>Tem tudo da edição Garçom.</li>
+              <li>Acrescenta o módulo de Cozinha.</li>
+              <li>Acrescenta o perfil de login da cozinha.</li>
+              <li>Navegação principal para o admin: Admin, Garçom e Cozinha.</li>
+              <li>Acrescenta a área administrativa Configurações da Cozinha.</li>
+              <li>Continua sem Caixa, Pagamentos, Relatórios do Caixa, Relatório de Vendas, Dashboard, Promoções e Logs.</li>
             </ul>
+
+            <div class="docs-inline-note">
+              <small>Tem tudo da anterior, mais</small>
+              <strong>Fila de produção e gestão da cozinha.</strong>
+              <p>
+                É a evolução natural quando o cliente já quer reduzir ruído entre
+                atendimento e preparo, mas ainda não precisa de uma frente própria de caixa.
+              </p>
+            </div>
           </article>
 
           <article class="docs-card" data-reveal>
@@ -217,15 +242,225 @@
               <span class="docs-pill">Fluxo ampliado</span>
             </div>
             <p>
-              Inclui também a frente de caixa e amplia a administração com áreas ligadas
-              a pagamento, configuração do caixa e relatórios operacionais de fechamento.
+              Esta edição mantém tudo o que já existe em Garçom + Cozinha e adiciona
+              a frente de recebimento e fechamento.
             </p>
             <ul class="docs-list">
-              <li>Módulos ativos: Administração essencial, Garçom, Cozinha e Caixa.</li>
-              <li>Perfis disponíveis: admin, garçom, cozinha e caixa.</li>
-              <li>Administração liberada: tudo da edição Garçom + Cozinha, mais meios de pagamento, configurações do caixa, relatórios de caixa e relatório de vendas.</li>
+              <li>Tem tudo da edição Garçom + Cozinha.</li>
+              <li>Acrescenta o módulo de Caixa.</li>
+              <li>Acrescenta o perfil de login do caixa.</li>
+              <li>Navegação principal para o admin: Admin, Garçom, Cozinha e Caixa.</li>
+              <li>Acrescenta as áreas administrativas: Pagamentos, Configurações do Caixa, Relatórios do Caixa e Relatório de Vendas.</li>
+              <li>Continua sem Dashboard, Promoções e Logs.</li>
+            </ul>
+
+            <div class="docs-inline-note">
+              <small>Tem tudo da anterior, mais</small>
+              <strong>Recebimento, fechamento e relatórios operacionais de caixa e vendas.</strong>
+              <p>
+                É a edição mais completa entre as opções comerciais enxutas, porque cobre
+                atendimento, produção e caixa sem ainda entrar na camada gerencial mais ampla.
+              </p>
+            </div>
+          </article>
+
+          <article class="docs-card" data-reveal>
+            <div class="docs-card__header">
+              <h3>Completo</h3>
+              <span class="docs-pill">Gestão ampliada</span>
+            </div>
+            <p>
+              Esta edição mantém tudo o que já existe em Garçom + Cozinha + Caixa e
+              adiciona a camada administrativa mais forte do projeto.
+            </p>
+            <ul class="docs-list">
+              <li>Tem tudo da edição Garçom + Cozinha + Caixa.</li>
+              <li>Acrescenta o Dashboard administrativo.</li>
+              <li>Acrescenta Promoções.</li>
+              <li>Acrescenta Logs.</li>
+              <li>Mantém Admin, Garçom, Cozinha e Caixa na navegação principal.</li>
+              <li>É a única edição com leitura gerencial mais ampla diretamente no admin.</li>
+            </ul>
+
+            <div class="docs-inline-note">
+              <small>Tem tudo da anterior, mais</small>
+              <strong>Visão gerencial, promoções e rastreabilidade operacional.</strong>
+              <p>
+                É a edição correta quando o cliente não quer só operar melhor, mas também
+                acompanhar indicadores, administrar promoções e ter mais profundidade de gestão.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="relatorios" class="section-shell">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Relatórios e análise</p>
+          <h2>Os relatórios aparecem conforme a edição sobe de escopo.</h2>
+          <p>
+            A diferença aqui é objetiva: as duas primeiras edições não abrem relatórios
+            administrativos; a terceira adiciona relatórios operacionais; a completa
+            adiciona leitura gerencial e rastreabilidade mais ampla.
+          </p>
+        </div>
+
+        <div class="docs-family-grid">
+          <article class="docs-card" data-reveal>
+            <div class="docs-card__header">
+              <h3>Garçom</h3>
+              <span class="docs-pill">Sem relatórios admin</span>
+            </div>
+            <ul class="docs-list">
+              <li>Não inclui Relatórios do Caixa.</li>
+              <li>Não inclui Relatório de Vendas.</li>
+              <li>Não inclui Dashboard.</li>
+              <li>Não inclui Logs.</li>
             </ul>
           </article>
+
+          <article class="docs-card" data-reveal>
+            <div class="docs-card__header">
+              <h3>Garçom + Cozinha</h3>
+              <span class="docs-pill">Sem relatórios admin</span>
+            </div>
+            <ul class="docs-list">
+              <li>Continua sem Relatórios do Caixa.</li>
+              <li>Continua sem Relatório de Vendas.</li>
+              <li>Continua sem Dashboard.</li>
+              <li>Continua sem Logs.</li>
+            </ul>
+          </article>
+
+          <article class="docs-card" data-reveal>
+            <div class="docs-card__header">
+              <h3>Garçom + Cozinha + Caixa</h3>
+              <span class="docs-pill">Relatórios operacionais</span>
+            </div>
+            <ul class="docs-list">
+              <li>Inclui Relatórios do Caixa.</li>
+              <li>Inclui Relatório de Vendas.</li>
+              <li>Não inclui Dashboard.</li>
+              <li>Não inclui Logs.</li>
+            </ul>
+
+            <div class="docs-inline-note">
+              <small>Diferença prática</small>
+              <strong>Esta é a primeira edição com leitura administrativa de resultados.</strong>
+              <p>
+                Ela já permite acompanhar fechamentos e vendas sem ainda abrir o painel
+                gerencial mais amplo da edição completa.
+              </p>
+            </div>
+          </article>
+
+          <article class="docs-card" data-reveal>
+            <div class="docs-card__header">
+              <h3>Completo</h3>
+              <span class="docs-pill">Leitura gerencial</span>
+            </div>
+            <ul class="docs-list">
+              <li>Inclui Relatórios do Caixa.</li>
+              <li>Inclui Relatório de Vendas.</li>
+              <li>Inclui Dashboard.</li>
+              <li>Inclui Logs.</li>
+            </ul>
+
+            <div class="docs-inline-note">
+              <small>Dashboard disponível</small>
+              <strong>O Dashboard amplia bastante a leitura do negócio.</strong>
+              <p>
+                Ele inclui comparação avançada, histórico de vendas, dia por faixa horária,
+                heatmap por dia/hora, mix de pagamentos, tipos de pedido, consumo interno
+                por funcionário, top itens, top categorias, operação de turnos, performance
+                operacional, progresso de metas e alertas operacionais.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="acessos" class="section-shell">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Acessos e áreas liberadas</p>
+          <h2>Perfis, navegação principal e administração disponíveis em cada edição.</h2>
+          <p>
+            Esta tabela resume o que realmente fica acessível no sistema, sem depender do
+            modo Demo ou Operacional.
+          </p>
+        </div>
+
+        <div class="docs-table-shell" data-reveal>
+          <table class="docs-table">
+            <caption>Escopo funcional por edição</caption>
+            <thead>
+              <tr>
+                <th scope="col">Critério</th>
+                <th scope="col">Garçom</th>
+                <th scope="col">Garçom + Cozinha</th>
+                <th scope="col">Garçom + Cozinha + Caixa</th>
+                <th scope="col">Completo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Perfis com login</th>
+                <td>admin, garçom</td>
+                <td>admin, garçom, cozinha</td>
+                <td>admin, garçom, cozinha, caixa</td>
+                <td>admin, garçom, cozinha, caixa</td>
+              </tr>
+              <tr>
+                <th scope="row">Navegação principal do admin</th>
+                <td>Admin e Garçom</td>
+                <td>Admin, Garçom e Cozinha</td>
+                <td>Admin, Garçom, Cozinha e Caixa</td>
+                <td>Admin, Garçom, Cozinha e Caixa</td>
+              </tr>
+              <tr>
+                <th scope="row">Cadastro e operação base</th>
+                <td>Itens do Cardápio, Categorias de Itens, Extras, Tarifas de Delivery, Clientes, Impressoras, Impressão, Usuários e Configurações do Sistema</td>
+                <td>Tudo da edição Garçom</td>
+                <td>Tudo da edição Garçom + Cozinha</td>
+                <td>Tudo da edição Garçom + Cozinha + Caixa</td>
+              </tr>
+              <tr>
+                <th scope="row">Configurações específicas</th>
+                <td>Configurações do Garçom</td>
+                <td>Configurações do Garçom + Configurações da Cozinha</td>
+                <td>Configurações do Garçom + Configurações da Cozinha + Configurações do Caixa</td>
+                <td>Configurações do Garçom + Configurações da Cozinha + Configurações do Caixa</td>
+              </tr>
+              <tr>
+                <th scope="row">Pagamentos e caixa</th>
+                <td>Não inclui</td>
+                <td>Não inclui</td>
+                <td>Pagamentos e operação de caixa</td>
+                <td>Pagamentos e operação de caixa</td>
+              </tr>
+              <tr>
+                <th scope="row">Relatórios disponíveis</th>
+                <td>Sem relatórios administrativos</td>
+                <td>Sem relatórios administrativos</td>
+                <td>Relatórios do Caixa + Relatório de Vendas</td>
+                <td>Relatórios do Caixa + Relatório de Vendas + Dashboard + Logs</td>
+              </tr>
+              <tr>
+                <th scope="row">Gestão ampliada</th>
+                <td>Não inclui</td>
+                <td>Não inclui</td>
+                <td>Não inclui Dashboard, Promoções ou Logs</td>
+                <td>Inclui Dashboard, Promoções e Logs</td>
+              </tr>
+              <tr>
+                <th scope="row">Leitura gerencial detalhada</th>
+                <td>Não</td>
+                <td>Não</td>
+                <td>Parcial, via relatórios operacionais</td>
+                <td>Sim, com widgets e visão mais ampla do negócio</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
