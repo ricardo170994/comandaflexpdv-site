@@ -4,7 +4,7 @@ Tudo o que faz parte do site institucional fica centralizado nesta pasta.
 
 ## Conteudo
 
-1. `index.html`, `404.html`, `robots.txt`, `.nojekyll`: arquivos publicados.
+1. `index.html`, `edicoes.html`, `404.html`, `robots.txt`, `.nojekyll`: arquivos publicados.
 2. `assets/`: CSS, JS e imagens.
 3. `preview-pages.ps1`: preview local rapido.
 4. `deploy-pages.yml`: workflow canonico do GitHub Pages.

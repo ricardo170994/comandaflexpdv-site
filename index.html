@@ -6,7 +6,7 @@
     <title>Comanda Flex PDV | PDV operacional local para restaurantes</title>
     <meta
       name="description"
-      content="Comanda Flex PDV é uma solução para restaurantes com mais agilidade no atendimento, mais controle no caixa e mais clareza para a gestão."
+      content="Comanda Flex PDV é uma solução para restaurantes com mais agilidade no atendimento, mais controle no caixa e mais clareza para a gestão. Contato: comandaflexpdv@gmail.com | Instagram: @comandaflexpdv."
     />
     <meta name="theme-color" content="#ff5d52" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,10 +41,11 @@
       </button>
 
       <nav id="site-nav" class="site-nav" aria-label="Navegação principal">
-        <a href="#beneficios">Benefícios</a>
-        <a href="#modulos">Módulos</a>
-        <a href="#resultados">Resultados</a>
-        <a href="#faq">FAQ</a>
+        <a href="#conteudo" data-page-tab-target="visao">Visão geral</a>
+        <a href="#conteudo" data-page-tab-target="modulos">Módulos</a>
+        <a href="#conteudo" data-page-tab-target="resultados">Resultados</a>
+        <a href="#conteudo" data-page-tab-target="faq">FAQ</a>
+        <a href="./edicoes.html">Edições</a>
         <a
           class="button button-small button-primary"
           href="https://instagram.com/comandaflexpdv"
@@ -65,7 +66,8 @@
             O Comanda Flex PDV organiza a rotina do restaurante do pedido ao
             fechamento. Garçom, cozinha, caixa e administração trabalham na
             mesma esteira, com menos retrabalho, menos erro e mais visibilidade
-            para quem decide.
+            para quem decide. Contato comercial: comandaflexpdv@gmail.com |
+            Instagram: @comandaflexpdv.
           </p>
 
           <div class="hero-actions">
@@ -77,7 +79,7 @@
             >
               Quero conhecer a solução
             </a>
-            <a class="button button-secondary" href="#beneficios">Ver benefícios</a>
+            <a class="button button-secondary" href="#conteudo" data-page-tab-target="visao">Ver apresentação</a>
           </div>
 
           <p class="hero-caption">
@@ -167,7 +169,61 @@
         </div>
       </section>
 
-      <section class="proof-bar section-shell" data-reveal>
+      <section id="conteudo" class="section-shell page-tabs-intro" data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow">Explore por tema</p>
+          <h2>Veja o material em blocos mais objetivos.</h2>
+          <p>
+            Em vez de percorrer tudo de uma vez, escolha a aba que faz mais sentido
+            para a conversa: visão geral, módulos, resultados ou perguntas frequentes.
+          </p>
+        </div>
+
+        <div class="page-tabs-nav" role="tablist" aria-label="Conteúdo principal do site">
+          <button
+            class="page-tab is-active"
+            type="button"
+            role="tab"
+            aria-selected="true"
+            aria-controls="conteudo-visao"
+            data-page-tab="visao"
+          >
+            Visão geral
+          </button>
+          <button
+            class="page-tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="conteudo-modulos"
+            data-page-tab="modulos"
+          >
+            Módulos
+          </button>
+          <button
+            class="page-tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="conteudo-resultados"
+            data-page-tab="resultados"
+          >
+            Resultados
+          </button>
+          <button
+            class="page-tab"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="conteudo-faq"
+            data-page-tab="faq"
+          >
+            FAQ
+          </button>
+        </div>
+      </section>
+
+      <section id="conteudo-visao" class="proof-bar section-shell page-panel-section" data-page-panel="visao" data-reveal>
         <article class="proof-item">
           <span>Mais agilidade</span>
           <p>Menos tempo entre anotar o pedido, produzir e receber o pagamento.</p>
@@ -182,7 +238,7 @@
         </article>
       </section>
 
-      <section id="beneficios" class="section-shell">
+      <section id="beneficios" class="section-shell page-panel-section" data-page-panel="visao">
         <div class="section-heading" data-reveal>
           <p class="eyebrow">Benefícios para vender melhor</p>
           <h2>O que o restaurante ganha quando para de depender do improviso.</h2>
@@ -250,7 +306,7 @@
         </div>
       </section>
 
-      <section class="section-shell audience-shell">
+      <section class="section-shell audience-shell page-panel-section" data-page-panel="visao">
         <div class="section-heading section-heading--light" data-reveal>
           <p class="eyebrow">Para quem faz sentido</p>
           <h2>Uma solução para restaurantes que querem crescer sem perder controle.</h2>
@@ -281,7 +337,7 @@
         </div>
       </section>
 
-      <section id="modulos" class="section-shell modules-shell">
+      <section id="conteudo-modulos" class="section-shell modules-shell page-panel-section" data-page-panel="modulos">
         <div class="section-heading" data-reveal>
           <p class="eyebrow">Módulos que se reforçam</p>
           <h2>Cada frente do restaurante ganha clareza no próprio trabalho.</h2>
@@ -494,7 +550,7 @@
         </div>
       </section>
 
-      <section id="resultados" class="section-shell retention-shell">
+      <section id="conteudo-resultados" class="section-shell retention-shell page-panel-section" data-page-panel="resultados">
         <div class="section-heading" data-reveal>
           <p class="eyebrow">O que o dono percebe na prática</p>
           <h2>Restaurantes permanecem quando a rotina melhora de verdade.</h2>
@@ -537,7 +593,7 @@
         </div>
       </section>
 
-      <section class="section-shell implementation-shell">
+      <section class="section-shell implementation-shell page-panel-section" data-page-panel="visao">
         <div class="section-heading" data-reveal>
           <p class="eyebrow">Como o valor aparece</p>
           <h2>O ganho aparece quando a equipe trabalha melhor e o gestor vê o negócio com mais clareza.</h2>
@@ -589,7 +645,7 @@
         </div>
       </section>
 
-      <section id="faq" class="section-shell faq-shell">
+      <section id="conteudo-faq" class="section-shell faq-shell page-panel-section" data-page-panel="faq">
         <div class="section-heading" data-reveal>
           <p class="eyebrow">Perguntas que ajudam a fechar</p>
           <h2>Objeções comuns, respondidas de forma direta.</h2>
@@ -650,7 +706,7 @@
             Falar sobre a solução
           </a>
           <a class="button button-secondary" href="mailto:comandaflexpdv@gmail.com">Enviar e-mail</a>
-          <a class="button button-secondary" href="#modulos">Revisar módulos</a>
+          <a class="button button-secondary" href="./edicoes.html">Ver edições</a>
         </div>
       </section>
     </main>
@@ -658,10 +714,13 @@
     <footer class="site-footer">
       <p>
         <strong>Comanda Flex PDV</strong>
-        <span>Solução para restaurantes que querem crescer com mais controle.</span>
+        <span>Solução para restaurantes que querem crescer com mais controle. Contato: comandaflexpdv@gmail.com | Instagram: @comandaflexpdv.</span>
       </p>
       <p>
         Contato: <a href="https://instagram.com/comandaflexpdv" target="_blank" rel="noreferrer">@comandaflexpdv</a>
+      </p>
+      <p>
+        Documentação: <a href="./edicoes.html">Edições Demo e Operacional</a>
       </p>
       <p>
         E-mail: <a href="mailto:comandaflexpdv@gmail.com">comandaflexpdv@gmail.com</a>

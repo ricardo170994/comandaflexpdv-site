@@ -30,6 +30,59 @@ if (navToggle && siteNav) {
   });
 }
 
+const pageTabButtons = Array.from(document.querySelectorAll(".page-tab"));
+const pagePanelSections = Array.from(document.querySelectorAll("[data-page-panel]"));
+const pageTabLinks = Array.from(document.querySelectorAll("[data-page-tab-target]"));
+
+if (pageTabButtons.length && pagePanelSections.length) {
+  let currentPageTab = "";
+
+  const activatePageTab = (tabId) => {
+    if (!tabId) {
+      return;
+    }
+
+    currentPageTab = tabId;
+
+    pageTabButtons.forEach((button) => {
+      const active = (button.dataset.pageTab || "") === tabId;
+      button.classList.toggle("is-active", active);
+      button.setAttribute("aria-selected", String(active));
+      button.tabIndex = active ? 0 : -1;
+    });
+
+    pagePanelSections.forEach((section) => {
+      const active = (section.dataset.pagePanel || "") === tabId;
+      section.hidden = !active;
+      if (active) {
+        section.classList.add("is-visible");
+        section.querySelectorAll("[data-reveal]").forEach((node) => node.classList.add("is-visible"));
+      }
+    });
+  };
+
+  const initialPageTab =
+    pageTabButtons.find((button) => button.classList.contains("is-active"))?.dataset.pageTab ||
+    pageTabButtons[0]?.dataset.pageTab ||
+    "";
+  activatePageTab(initialPageTab);
+
+  pageTabButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      activatePageTab(button.dataset.pageTab || "");
+    });
+  });
+
+  pageTabLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      const targetTab = link.dataset.pageTabTarget || "";
+      if (targetTab && targetTab !== currentPageTab) {
+        activatePageTab(targetTab);
+      }
+    });
+  });
+}
+
 const animateCounter = (element) => {
   if (element.dataset.animated === "true") {
     return;
